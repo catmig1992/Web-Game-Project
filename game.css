@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid red;
+outline: 1px solid red;
 }
 
 body {
@@ -12,6 +12,10 @@ body {
 header 
 *******/
 
+h1 {
+  color: #ffc23e;
+  text-align: center;
+}
 li {
   color: #fa31b5;
 }
@@ -26,23 +30,13 @@ nav a:hover {
   color: #ffc23e;
 }
 
+
 /******* 
 main 
 *******/
 
-h1 {
-  color: #ffc23e;
-  text-align: center;
-}
-h2 {
-  text-align: center;
-}
-h2 a {
-  color: #fa31b5;
-  text-decoration: none;
-}
-h2 a:hover {
-  color: #ffc23e;
+.game-choices {
+  color: white;
 }
 
 /******* 
