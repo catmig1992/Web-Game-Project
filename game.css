@@ -1,11 +1,14 @@
 * {
-outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 body {
   background-color: hsl(261, 88%, 26%, 0.75);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /******* 
@@ -15,9 +18,11 @@ header
 h1 {
   color: #ffc23e;
   text-align: center;
+  font-size: 4em;
 }
 li {
   color: #fa31b5;
+  font-size: 1.5em;
 }
 nav ul {
   list-style: none;
@@ -30,13 +35,18 @@ nav a:hover {
   color: #ffc23e;
 }
 
-
 /******* 
 main 
 *******/
 
 .game-choices {
   color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+.image-choices {
+  display: flex;
+  justify-content: center;
 }
 
 /******* 
