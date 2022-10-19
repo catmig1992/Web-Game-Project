@@ -4,6 +4,9 @@ let scissorsButton = document.getElementById("scissors");
 let lizardButton = document.getElementById("lizard");
 let spockButton = document.getElementById("spock");
 
+let userInput = document.querySelector(".user-input");
+let computerOutput = document.querySelector(".computer-output");
+
 let computerChoice = Math.random();
 
 if (computerChoice <= 0.2) {
@@ -21,17 +24,17 @@ if (computerChoice <= 0.2) {
 console.log(computerChoice);
 
 rockButton.addEventListener("click", function () {
-  console.log("Rock was chosen!");
+  userInput.innerHTML = "You selected rock.";
 });
 paperButton.addEventListener("click", function () {
-  console.log("Paper was chosen!");
+  userInput.innerHTML = "You selected paper.";
 });
 scissorsButton.addEventListener("click", function () {
-  console.log("Scissors was chosen!");
+  userInput.innerHTML = "You selected scissors.";
 });
 lizardButton.addEventListener("click", function () {
-  console.log("Lizard was chosen!");
+  userInput.innerHTML = "You selected lizard.";
 });
 spockButton.addEventListener("click", function () {
-  console.log("Spock was chosen!");
+  userInput.innerHTML = "You selected Spock.";
 });

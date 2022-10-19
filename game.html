@@ -18,14 +18,34 @@
     </header>
     <main>
       <div class="selection">
-        <p class="game-choices">Rock, Paper, Scissors, Lizard, Spock</p>
+        <p class="game-choices">
+          Choose: Rock, Paper, Scissors, Lizard or Spock
+        </p>
+        <p class="user-input"></p>
       </div>
-      <div class="image-choices">
+      <div class="user-choices">
         <button id="rock" class="rock" type="button">Rock</button>
         <button id="paper" class="paper" type="button">Paper</button>
         <button id="scissors" class="scissors" type="button">Scissors</button>
         <button id="lizard" class="lizard" type="button">Lizard</button>
         <button id="spock" class="spock" type="button">Spock</button>
+      </div>
+      <div class="scoreboard">
+        <h2>Scoreboard</h2>
+        <table>
+          <thead class="score-title">
+            <tr>
+              <th>User's Wins</th>
+              <th>Computer's Wins</th>
+            </tr>
+          </thead>
+          <tbody class="scores">
+            <tr>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
     <footer></footer>
