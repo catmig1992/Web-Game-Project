@@ -4,9 +4,6 @@ let scissorsButton = document.getElementById("scissors");
 let lizardButton = document.getElementById("lizard");
 let spockButton = document.getElementById("spock");
 
-let userInput = document.querySelector(".user-input");
-let computerOutput = document.querySelector(".computer-output");
-
 let computerChoice = Math.random();
 
 if (computerChoice <= 0.2) {
@@ -24,17 +21,72 @@ if (computerChoice <= 0.2) {
 console.log(computerChoice);
 
 rockButton.addEventListener("click", function () {
-  userInput.innerHTML = "You selected rock.";
+  let userInput = "rock";
+  if (userInput === computerChoice) {
+    document.getElementById("result").innerHTML = "Tie!";
+  } else if (computerChoice === "paper") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "spock") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "scissors") {
+    document.getElementById("result").innerHTML = "Winner!";
+  } else if (computerChoice === "lizard") {
+    document.getElementById("result").innerHTML = "Winner!";
+  }
 });
 paperButton.addEventListener("click", function () {
-  userInput.innerHTML = "You selected paper.";
+  let userInput = "paper";
+  if (userInput === computerChoice) {
+    document.getElementById("result").innerHTML = "Tie!";
+  } else if (computerChoice === "scissors") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "lizard") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "rock") {
+    document.getElementById("result").innerHTML = "Winner!";
+  } else if (computerChoice === "spock") {
+    document.getElementById("result").innerHTML = "Winner!";
+  }
 });
 scissorsButton.addEventListener("click", function () {
-  userInput.innerHTML = "You selected scissors.";
+  let userInput = "scissors";
+  if (userInput === computerChoice) {
+    document.getElementById("result").innerHTML = "Tie!";
+  } else if (computerChoice === "rock") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "spock") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "paper") {
+    document.getElementById("result").innerHTML = "Winner!";
+  } else if (computerChoice === "lizard") {
+    document.getElementById("result").innerHTML = "Winner!";
+  }
 });
 lizardButton.addEventListener("click", function () {
-  userInput.innerHTML = "You selected lizard.";
+  let userInput = "lizard";
+  if (userInput === computerChoice) {
+    document.getElementById("result").innerHTML = "Tie!";
+  } else if (computerChoice === "rock") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "scissors") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "paper") {
+    document.getElementById("result").innerHTML = "Winner!";
+  } else if (computerChoice === "spock") {
+    document.getElementById("result").innerHTML = "Winner!";
+  }
 });
 spockButton.addEventListener("click", function () {
-  userInput.innerHTML = "You selected Spock.";
+  let userInput = "spock";
+  if (userInput === computerChoice) {
+    document.getElementById("result").innerHTML = "Tie!";
+  } else if (computerChoice === "paper") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "lizard") {
+    document.getElementById("result").innerHTML = "Loser!";
+  } else if (computerChoice === "scissors") {
+    document.getElementById("result").innerHTML = "Winner!";
+  } else if (computerChoice === "rock") {
+    document.getElementById("result").innerHTML = "Winner!";
+  }
 });

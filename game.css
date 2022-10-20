@@ -72,17 +72,17 @@ th {
   border-color: #ffc23e;
   box-shadow: 8px 5px 10px rgb(22, 22, 22);
 }
-.user-input {
-  color: white;
-  text-align: center;
-}
 .score-title,
 .scores {
   color: white;
   text-align: center;
   font-size: 1.2em;
 }
-
+#result {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
 /******* 
 footer 
 *******/
