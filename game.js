@@ -1,27 +1,35 @@
-let rockButton = document.getElementById("rock");
-let paperButton = document.getElementById("paper");
-let scissorsButton = document.getElementById("scissors");
-let lizardButton = document.getElementById("lizard");
-let spockButton = document.getElementById("spock");
+// let computerChoice = Math.random();
+// if (computerChoice <= 0.2) {
+//   computerChoice = "rock";
+// } else if (0.2 < computerChoice <= 0.4) {
+//   computerChoice = "paper";
+// } else if (0.4 < computerChoice <= 0.6) {
+//   computerChoice = "scissors";
+// } else if (0.6 < computerChoice <= 0.8) {
+//   computerChoice = "lizard";
+// } else {
+//   computerChoice = "spock";
+// }
+// console.log(computerChoice);
 
-let computerChoice = Math.random();
-
-if (computerChoice <= 0.2) {
-  computerChoice = "rock";
-} else if (0.2 < computerChoice <= 0.4) {
-  computerChoice = "paper";
-} else if (0.4 < computerChoice <= 0.6) {
-  computerChoice = "scissors";
-} else if (0.6 < computerChoice <= 0.8) {
-  computerChoice = "lizard";
-} else {
-  computerChoice = "spock";
-}
-
-console.log(computerChoice);
-
-rockButton.addEventListener("click", function () {
+//code breaks when refactoring the logic above into a function, probably need to work on variable names
+document.getElementById("rock").addEventListener("click", function () {
   let userInput = "rock";
+  let computerChoice = Math.random();
+
+  if (computerChoice <= 0.2) {
+    computerChoice = "rock";
+  } else if (0.2 < computerChoice <= 0.4) {
+    computerChoice = "paper";
+  } else if (0.4 < computerChoice <= 0.6) {
+    computerChoice = "scissors";
+  } else if (0.6 < computerChoice <= 0.8) {
+    computerChoice = "lizard";
+  } else {
+    computerChoice = "spock";
+  }
+  console.log(computerChoice);
+
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie!";
   } else if (computerChoice === "paper") {
@@ -34,8 +42,23 @@ rockButton.addEventListener("click", function () {
     document.getElementById("result").innerHTML = "Winner!";
   }
 });
-paperButton.addEventListener("click", function () {
+document.getElementById("paper").addEventListener("click", function () {
   let userInput = "paper";
+  let computerChoice = Math.random();
+
+  if (computerChoice <= 0.2) {
+    computerChoice = "rock";
+  } else if (0.2 < computerChoice <= 0.4) {
+    computerChoice = "paper";
+  } else if (0.4 < computerChoice <= 0.6) {
+    computerChoice = "scissors";
+  } else if (0.6 < computerChoice <= 0.8) {
+    computerChoice = "lizard";
+  } else {
+    computerChoice = "spock";
+  }
+  console.log(computerChoice);
+
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie!";
   } else if (computerChoice === "scissors") {
@@ -48,8 +71,23 @@ paperButton.addEventListener("click", function () {
     document.getElementById("result").innerHTML = "Winner!";
   }
 });
-scissorsButton.addEventListener("click", function () {
+document.getElementById("scissors").addEventListener("click", function () {
   let userInput = "scissors";
+  let computerChoice = Math.random();
+
+  if (computerChoice <= 0.2) {
+    computerChoice = "rock";
+  } else if (0.2 < computerChoice <= 0.4) {
+    computerChoice = "paper";
+  } else if (0.4 < computerChoice <= 0.6) {
+    computerChoice = "scissors";
+  } else if (0.6 < computerChoice <= 0.8) {
+    computerChoice = "lizard";
+  } else {
+    computerChoice = "spock";
+  }
+  console.log(computerChoice);
+
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie!";
   } else if (computerChoice === "rock") {
@@ -62,8 +100,23 @@ scissorsButton.addEventListener("click", function () {
     document.getElementById("result").innerHTML = "Winner!";
   }
 });
-lizardButton.addEventListener("click", function () {
+document.getElementById("lizard").addEventListener("click", function () {
   let userInput = "lizard";
+  let computerChoice = Math.random();
+
+  if (computerChoice <= 0.2) {
+    computerChoice = "rock";
+  } else if (0.2 < computerChoice <= 0.4) {
+    computerChoice = "paper";
+  } else if (0.4 < computerChoice <= 0.6) {
+    computerChoice = "scissors";
+  } else if (0.6 < computerChoice <= 0.8) {
+    computerChoice = "lizard";
+  } else {
+    computerChoice = "spock";
+  }
+  console.log(computerChoice);
+
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie!";
   } else if (computerChoice === "rock") {
@@ -76,8 +129,23 @@ lizardButton.addEventListener("click", function () {
     document.getElementById("result").innerHTML = "Winner!";
   }
 });
-spockButton.addEventListener("click", function () {
+document.getElementById("spock").addEventListener("click", function () {
   let userInput = "spock";
+  let computerChoice = Math.random();
+
+  if (computerChoice <= 0.2) {
+    computerChoice = "rock";
+  } else if (0.2 < computerChoice <= 0.4) {
+    computerChoice = "paper";
+  } else if (0.4 < computerChoice <= 0.6) {
+    computerChoice = "scissors";
+  } else if (0.6 < computerChoice <= 0.8) {
+    computerChoice = "lizard";
+  } else {
+    computerChoice = "spock";
+  }
+  console.log(computerChoice);
+
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie!";
   } else if (computerChoice === "paper") {
