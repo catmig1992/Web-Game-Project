@@ -1,6 +1,7 @@
 let winnerCount = 0;
 let loserCount = 0;
 
+let clickSound = document.querySelector("#click-sound");
 // let computerChoice = Math.random();
 // if (computerChoice <= 0.2) {
 //   computerChoice = "rock";
@@ -18,6 +19,7 @@ let loserCount = 0;
 //code breaks when refactoring the logic above into a function, probably need to work on variable names
 
 document.getElementById("rock").addEventListener("click", function () {
+  clickSound.play();
   let userInput = "rock";
   let computerChoice = Math.random();
 
@@ -53,6 +55,7 @@ document.getElementById("rock").addEventListener("click", function () {
   document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("paper").addEventListener("click", function () {
+  clickSound.play();
   let userInput = "paper";
   let computerChoice = Math.random();
 
@@ -88,6 +91,7 @@ document.getElementById("paper").addEventListener("click", function () {
   document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("scissors").addEventListener("click", function () {
+  clickSound.play();
   let userInput = "scissors";
   let computerChoice = Math.random();
 
@@ -123,6 +127,7 @@ document.getElementById("scissors").addEventListener("click", function () {
   document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("lizard").addEventListener("click", function () {
+  clickSound.play();
   let userInput = "lizard";
   let computerChoice = Math.random();
 
@@ -158,6 +163,7 @@ document.getElementById("lizard").addEventListener("click", function () {
   document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("spock").addEventListener("click", function () {
+  clickSound.play();
   let userInput = "spock";
   let computerChoice = Math.random();
 
@@ -196,6 +202,7 @@ document.getElementById("spock").addEventListener("click", function () {
 document
   .getElementById("clear-scoreboard")
   .addEventListener("click", function () {
+    clickSound.play();
     winnerCount = 0;
     loserCount = 0;
     document.getElementById("user-total").innerText = 0;
