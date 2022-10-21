@@ -192,3 +192,12 @@ document.getElementById("spock").addEventListener("click", function () {
   document.getElementById("user-total").textContent = winnerCount;
   document.getElementById("computer-total").textContent = loserCount;
 });
+
+document
+  .getElementById("clear-scoreboard")
+  .addEventListener("click", function () {
+    winnerCount = 0;
+    loserCount = 0;
+    document.getElementById("user-total").innerText = 0;
+    document.getElementById("computer-total").innerText = 0;
+  });

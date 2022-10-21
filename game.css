@@ -83,6 +83,21 @@ th {
   text-align: center;
   font-size: 2em;
 }
+
+.restart-button {
+  display: flex;
+  justify-content: flex-end;
+}
+#clear-scoreboard {
+  background-color: #ffc23e;
+  color: rgb(49, 8, 125);
+  font-size: 1.5em;
+  padding: 0.15em;
+  margin: 5em 0.5em 0.5em;
+  border-radius: 10px;
+  border-color: #ffc23e;
+  box-shadow: 8px 5px 10px rgb(22, 22, 22);
+}
 /******* 
 footer 
 *******/
