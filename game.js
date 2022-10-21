@@ -2,6 +2,7 @@ let winnerCount = 0;
 let loserCount = 0;
 
 let clickSound = document.querySelector("#click-sound");
+
 // let computerChoice = Math.random();
 // if (computerChoice <= 0.2) {
 //   computerChoice = "rock";
@@ -54,6 +55,7 @@ document.getElementById("rock").addEventListener("click", function () {
   document.getElementById("user-total").textContent = winnerCount;
   document.getElementById("computer-total").textContent = loserCount;
 });
+
 document.getElementById("paper").addEventListener("click", function () {
   clickSound.play();
   let userInput = "paper";
@@ -90,6 +92,7 @@ document.getElementById("paper").addEventListener("click", function () {
   document.getElementById("user-total").textContent = winnerCount;
   document.getElementById("computer-total").textContent = loserCount;
 });
+
 document.getElementById("scissors").addEventListener("click", function () {
   clickSound.play();
   let userInput = "scissors";
@@ -126,6 +129,7 @@ document.getElementById("scissors").addEventListener("click", function () {
   document.getElementById("user-total").textContent = winnerCount;
   document.getElementById("computer-total").textContent = loserCount;
 });
+
 document.getElementById("lizard").addEventListener("click", function () {
   clickSound.play();
   let userInput = "lizard";
@@ -162,6 +166,7 @@ document.getElementById("lizard").addEventListener("click", function () {
   document.getElementById("user-total").textContent = winnerCount;
   document.getElementById("computer-total").textContent = loserCount;
 });
+
 document.getElementById("spock").addEventListener("click", function () {
   clickSound.play();
   let userInput = "spock";
