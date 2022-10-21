@@ -1,3 +1,6 @@
+let winnerCount = 0;
+let loserCount = 0;
+
 // let computerChoice = Math.random();
 // if (computerChoice <= 0.2) {
 //   computerChoice = "rock";
@@ -13,6 +16,7 @@
 // console.log(computerChoice);
 
 //code breaks when refactoring the logic above into a function, probably need to work on variable names
+
 document.getElementById("rock").addEventListener("click", function () {
   let userInput = "rock";
   let computerChoice = Math.random();
@@ -31,16 +35,22 @@ document.getElementById("rock").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie!";
+    document.getElementById("result").innerHTML = "Tie! Go Again.";
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   }
+  document.getElementById("user-total").textContent = winnerCount;
+  document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("paper").addEventListener("click", function () {
   let userInput = "paper";
@@ -60,16 +70,22 @@ document.getElementById("paper").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie!";
+    document.getElementById("result").innerHTML = "Tie! Go Again.";
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   }
+  document.getElementById("user-total").textContent = winnerCount;
+  document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("scissors").addEventListener("click", function () {
   let userInput = "scissors";
@@ -89,16 +105,22 @@ document.getElementById("scissors").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie!";
+    document.getElementById("result").innerHTML = "Tie! Go Again.";
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   }
+  document.getElementById("user-total").textContent = winnerCount;
+  document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("lizard").addEventListener("click", function () {
   let userInput = "lizard";
@@ -118,16 +140,22 @@ document.getElementById("lizard").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie!";
+    document.getElementById("result").innerHTML = "Tie! Go Again.";
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   }
+  document.getElementById("user-total").textContent = winnerCount;
+  document.getElementById("computer-total").textContent = loserCount;
 });
 document.getElementById("spock").addEventListener("click", function () {
   let userInput = "spock";
@@ -147,14 +175,20 @@ document.getElementById("spock").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie!";
+    document.getElementById("result").innerHTML = "Tie! Go Again.";
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Loser!";
+    loserCount += 1;
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Winner!";
+    winnerCount += 1;
   }
+  document.getElementById("user-total").textContent = winnerCount;
+  document.getElementById("computer-total").textContent = loserCount;
 });
