@@ -6,10 +6,10 @@ body {
   background: linear-gradient(
     0.25turn,
     rgb(49, 8, 125),
-    rgb(118, 97, 131),
+    rgb(98, 80, 109),
     #fa31b5
   );
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -23,10 +23,11 @@ h1 {
   color: #ffc23e;
   text-align: center;
   font-size: 4em;
+  margin: 0;
 }
 li {
   color: #fa31b5;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 nav ul {
   list-style: none;
@@ -45,7 +46,8 @@ main
 
 h2 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.8em;
+  margin: 5px 0;
 }
 h2 a {
   color: #fa31b5;

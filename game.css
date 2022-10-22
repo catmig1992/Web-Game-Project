@@ -6,11 +6,11 @@ body {
   background: linear-gradient(
     0.25turn,
     rgb(49, 8, 125),
-    rgb(118, 97, 131),
+    rgb(98, 80, 109),
     #fa31b5
   );
 
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -25,13 +25,16 @@ h1 {
   color: #ffc23e;
   text-align: center;
   font-size: 4em;
+  margin: 0;
+  padding: 0;
 }
 li {
   color: #fa31b5;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 nav ul {
   list-style: none;
+  margin: 5px 0 0;
 }
 nav a {
   color: #fa31b5;
@@ -59,10 +62,17 @@ td {
 th {
   padding: 10px 40px;
 }
+img {
+  margin-left: 5.22em;
+  width: 355px;
+  height: 235px;
+  border-radius: 10px;
+}
 .game-choices {
   color: white;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.7em;
+  margin: 15px 0;
 }
 .user-choices {
   display: flex;
@@ -89,6 +99,7 @@ th {
   color: white;
   text-align: center;
   font-size: 2em;
+  margin: 10px;
 }
 
 .restart-button {
@@ -100,7 +111,7 @@ th {
   color: rgb(49, 8, 125);
   font-size: 1.5em;
   padding: 0.15em;
-  margin: 5em 0.5em 0.5em;
+  margin: 3em 0.5em 0.5em;
   border-radius: 10px;
   border-color: #ffc23e;
   box-shadow: 8px 5px 10px rgb(22, 22, 22);

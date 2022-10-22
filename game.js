@@ -3,14 +3,15 @@ let loserCount = 0;
 
 let clickSound = document.querySelector("#click-sound");
 
+const img = document.querySelector("img");
 // let computerChoice = Math.random();
 // if (computerChoice <= 0.2) {
 //   computerChoice = "rock";
-// } else if (0.2 < computerChoice <= 0.4) {
+// } else if (0.21 <= computerChoice <= 0.4) {
 //   computerChoice = "paper";
-// } else if (0.4 < computerChoice <= 0.6) {
+// } else if (0.41 <= computerChoice <= 0.6) {
 //   computerChoice = "scissors";
-// } else if (0.6 < computerChoice <= 0.8) {
+// } else if (0.61 <= computerChoice <= 0.8) {
 //   computerChoice = "lizard";
 // } else {
 //   computerChoice = "spock";
@@ -26,11 +27,11 @@ document.getElementById("rock").addEventListener("click", function () {
 
   if (computerChoice <= 0.2) {
     computerChoice = "rock";
-  } else if (0.2 < computerChoice <= 0.4) {
+  } else if (0.21 <= computerChoice <= 0.4) {
     computerChoice = "paper";
-  } else if (0.4 < computerChoice <= 0.6) {
+  } else if (0.41 <= computerChoice <= 0.6) {
     computerChoice = "scissors";
-  } else if (0.6 < computerChoice <= 0.8) {
+  } else if (0.61 <= computerChoice <= 0.8) {
     computerChoice = "lizard";
   } else {
     computerChoice = "spock";
@@ -40,25 +41,35 @@ document.getElementById("rock").addEventListener("click", function () {
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie! Go Again.";
     document.getElementById("result-explanation").innerHTML = "Draw";
+    img.src = "assets/brett-jordan-6270028.jpg";
+    img.alt = "tiles that spells out 'stop, think, engage'";
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Paper Covers Rock";
+    img.src = "assets/20221021_004335.jpg";
+    img.alt = "two hands gesturing paper and rock";
     loserCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Spock Vaporizes Rock";
+    img.src = "assets/20221021_004547.jpg";
+    img.alt = "two hands gesturing Spock and rock";
     loserCount += 1;
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Rock Crushes Scissors";
+    img.src = "assets/20221021_004313.jpg";
+    img.alt = "two hands gesturing rock and scissors";
     winnerCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Rock Crushes Lizard";
+    img.src = "assets/20221021_004309.jpg";
+    img.alt = "two hands gesturing rock and lizard";
     winnerCount += 1;
   }
   document.getElementById("user-total").textContent = winnerCount;
@@ -72,11 +83,11 @@ document.getElementById("paper").addEventListener("click", function () {
 
   if (computerChoice <= 0.2) {
     computerChoice = "rock";
-  } else if (0.2 < computerChoice <= 0.4) {
+  } else if (0.21 <= computerChoice <= 0.4) {
     computerChoice = "paper";
-  } else if (0.4 < computerChoice <= 0.6) {
+  } else if (0.41 <= computerChoice <= 0.6) {
     computerChoice = "scissors";
-  } else if (0.6 < computerChoice <= 0.8) {
+  } else if (0.61 <= computerChoice <= 0.8) {
     computerChoice = "lizard";
   } else {
     computerChoice = "spock";
@@ -86,25 +97,35 @@ document.getElementById("paper").addEventListener("click", function () {
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie! Go Again.";
     document.getElementById("result-explanation").innerHTML = "Draw";
+    img.src = "assets/brett-jordan-6270028.jpg";
+    img.alt = "tiles that spells out 'stop, think, engage'";
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Scissors Cuts Paper";
+    img.src = "assets/20221021_004410.jpg";
+    img.alt = "two hands gesturing scissors and paper";
     loserCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Lizard Eats Paper";
+    img.src = "assets/20221021_004451.jpg";
+    img.alt = "two hands gesturing lizard and paper";
     loserCount += 1;
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Paper Covers Rock";
+    img.src = "assets/20221021_004335.jpg";
+    img.alt = "two hands gesturing paper and rock";
     winnerCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Paper Disproves Spock";
+    img.src = "assets/20221021_004350.jpg";
+    img.alt = "two hands gesturing paper and Spock";
     winnerCount += 1;
   }
   document.getElementById("user-total").textContent = winnerCount;
@@ -118,11 +139,11 @@ document.getElementById("scissors").addEventListener("click", function () {
 
   if (computerChoice <= 0.2) {
     computerChoice = "rock";
-  } else if (0.2 < computerChoice <= 0.4) {
+  } else if (0.21 <= computerChoice <= 0.4) {
     computerChoice = "paper";
-  } else if (0.4 < computerChoice <= 0.6) {
+  } else if (0.41 <= computerChoice <= 0.6) {
     computerChoice = "scissors";
-  } else if (0.6 < computerChoice <= 0.8) {
+  } else if (0.61 <= computerChoice <= 0.8) {
     computerChoice = "lizard";
   } else {
     computerChoice = "spock";
@@ -132,25 +153,35 @@ document.getElementById("scissors").addEventListener("click", function () {
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie! Go Again.";
     document.getElementById("result-explanation").innerHTML = "Draw";
+    img.src = "assets/brett-jordan-6270028.jpg";
+    img.alt = "tiles that spells out 'stop, think, engage'";
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Rock Crushes Scissors";
+    img.src = "assets/20221021_004313.jpg";
+    img.alt = "two hands gesturing rock and scissors";
     loserCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Spock Smashes Scissors";
+    img.src = "assets/20221021_004536.jpg";
+    img.alt = "two hands gesturing spock and scissors";
     loserCount += 1;
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Scissors Cuts Paper";
+    img.src = "assets/20221021_004410.jpg";
+    img.alt = "two hands gesturing scissors and paper";
     winnerCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Scissors Decapitates Lizard";
+    img.src = "assets/20221021_004417.jpg";
+    img.alt = "two hands gesturing scissors and lizard";
     winnerCount += 1;
   }
   document.getElementById("user-total").textContent = winnerCount;
@@ -164,11 +195,11 @@ document.getElementById("lizard").addEventListener("click", function () {
 
   if (computerChoice <= 0.2) {
     computerChoice = "rock";
-  } else if (0.2 < computerChoice <= 0.4) {
+  } else if (0.21 <= computerChoice <= 0.4) {
     computerChoice = "paper";
-  } else if (0.4 < computerChoice <= 0.6) {
+  } else if (0.41 <= computerChoice <= 0.6) {
     computerChoice = "scissors";
-  } else if (0.6 < computerChoice <= 0.8) {
+  } else if (0.61 <= computerChoice <= 0.8) {
     computerChoice = "lizard";
   } else {
     computerChoice = "spock";
@@ -178,25 +209,35 @@ document.getElementById("lizard").addEventListener("click", function () {
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie! Go Again.";
     document.getElementById("result-explanation").innerHTML = "Draw";
+    img.src = "assets/brett-jordan-6270028.jpg";
+    img.alt = "tiles that spells out 'stop, think, engage'";
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Rock Crushes Lizard";
+    img.src = "assets/20221021_004309.jpg";
+    img.alt = "two hands gesturing rock and lizard";
     loserCount += 1;
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Scissors Decapitates Lizard";
+    img.src = "assets/20221021_004417.jpg";
+    img.alt = "two hands gesturing scissors and lizard";
     loserCount += 1;
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Lizard Eats Paper";
+    img.src = "assets/20221021_004451.jpg";
+    img.alt = "two hands gesturing lizard and paper";
     winnerCount += 1;
   } else if (computerChoice === "spock") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Lizard Poisons Spock";
+    img.src = "assets/20221021_004441.jpg";
+    img.alt = "two hands gesturing lizard and Spock";
     winnerCount += 1;
   }
   document.getElementById("user-total").textContent = winnerCount;
@@ -210,11 +251,11 @@ document.getElementById("spock").addEventListener("click", function () {
 
   if (computerChoice <= 0.2) {
     computerChoice = "rock";
-  } else if (0.2 < computerChoice <= 0.4) {
+  } else if (0.21 <= computerChoice <= 0.4) {
     computerChoice = "paper";
-  } else if (0.4 < computerChoice <= 0.6) {
+  } else if (0.41 <= computerChoice <= 0.6) {
     computerChoice = "scissors";
-  } else if (0.6 < computerChoice <= 0.8) {
+  } else if (0.61 <= computerChoice <= 0.8) {
     computerChoice = "lizard";
   } else {
     computerChoice = "spock";
@@ -224,25 +265,35 @@ document.getElementById("spock").addEventListener("click", function () {
   if (userInput === computerChoice) {
     document.getElementById("result").innerHTML = "Tie! Go Again.";
     document.getElementById("result-explanation").innerHTML = "Draw";
+    img.src = "assets/brett-jordan-6270028.jpg";
+    img.alt = "tiles that spells out 'stop, think, engage'";
   } else if (computerChoice === "paper") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Paper Disproves Spock";
+    img.src = "assets/20221021_004350.jpg";
+    img.alt = "two hands gesturing paper and Spock";
     loserCount += 1;
   } else if (computerChoice === "lizard") {
     document.getElementById("result").innerHTML = "Loser!";
     document.getElementById("result-explanation").innerHTML =
       "Lizard Poisons Spock";
+    img.src = "assets/20221021_004441.jpg";
+    img.alt = "two hands gesturing lizard and Spock";
     loserCount += 1;
   } else if (computerChoice === "scissors") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Spock Smashes Scissors";
+    img.src = "assets/20221021_004536.jpg";
+    img.alt = "two hands gesturing Spock and scissors";
     winnerCount += 1;
   } else if (computerChoice === "rock") {
     document.getElementById("result").innerHTML = "Winner!";
     document.getElementById("result-explanation").innerHTML =
       "Spock Vaporizes Rock";
+    img.src = "assets/20221021_004547.jpg";
+    img.alt = "two hands gesturing Spock and rock";
     winnerCount += 1;
   }
   document.getElementById("user-total").textContent = winnerCount;
@@ -259,4 +310,7 @@ document
     document.getElementById("computer-total").innerText = 0;
     document.getElementById("result").innerHTML = "";
     document.getElementById("result-explanation").innerHTML = "";
+    img.src = "assets/ds-stories-6005213.jpg";
+    img.alt =
+      "white tiles that spells out 'play the game' on a green background";
   });
