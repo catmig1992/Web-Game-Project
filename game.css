@@ -84,7 +84,8 @@ th {
   text-align: center;
   font-size: 1.2em;
 }
-#result {
+#result,
+#result-explanation {
   color: white;
   text-align: center;
   font-size: 2em;
