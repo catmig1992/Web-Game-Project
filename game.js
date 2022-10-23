@@ -9,6 +9,92 @@ function logWin() {
   document.getElementById("result").innerHTML = "Winner!";
   winnerCount += 1;
 }
+
+function logLoss() {
+  document.getElementById("result").innerHTML = "Loser!";
+  loserCount += 1;
+}
+
+function tieResult() {
+  document.getElementById("result").innerHTML = "Tie! Go Again.";
+  document.getElementById("result-explanation").innerHTML = "Draw";
+  img.src = "assets/brett-jordan-6270028.jpg";
+  img.alt = "tiles that spells out 'stop, think, engage'";
+}
+
+function logCounter() {
+  document.getElementById("user-total").textContent = winnerCount;
+  document.getElementById("computer-total").textContent = loserCount;
+}
+
+function rockCrushesScissors() {
+  document.getElementById("result-explanation").innerHTML =
+    "Rock Crushes Scissors";
+  img.src = "assets/20221021_004313.jpg";
+  img.alt = "two hands gesturing rock and scissors";
+}
+
+function rockCrushesLizard() {
+  document.getElementById("result-explanation").innerHTML =
+    "Rock Crushes Lizard";
+  img.src = "assets/20221021_004309.jpg";
+  img.alt = "two hands gesturing rock and lizard";
+}
+
+function paperCoversRock() {
+  document.getElementById("result-explanation").innerHTML = "Paper Covers Rock";
+  img.src = "assets/20221021_004335.jpg";
+  img.alt = "two hands gesturing paper and rock";
+}
+
+function paperDisprovesSpock() {
+  document.getElementById("result-explanation").innerHTML =
+    "Paper Disproves Spock";
+  img.src = "assets/20221021_004350.jpg";
+  img.alt = "two hands gesturing paper and Spock";
+}
+
+function scissorsCutsPaper() {
+  document.getElementById("result-explanation").innerHTML =
+    "Scissors Cuts Paper";
+  img.src = "assets/20221021_004410.jpg";
+  img.alt = "two hands gesturing scissors and paper";
+}
+
+function scissorsDecapitatesLizard() {
+  document.getElementById("result-explanation").innerHTML =
+    "Scissors Decapitates Lizard";
+  img.src = "assets/20221021_004417.jpg";
+  img.alt = "two hands gesturing scissors and lizard";
+}
+
+function lizardEatsPaper() {
+  document.getElementById("result-explanation").innerHTML = "Lizard Eats Paper";
+  img.src = "assets/20221021_004451.jpg";
+  img.alt = "two hands gesturing lizard and paper";
+}
+
+function lizardPoisonsSpock() {
+  document.getElementById("result-explanation").innerHTML =
+    "Lizard Poisons Spock";
+  img.src = "assets/20221021_004441.jpg";
+  img.alt = "two hands gesturing lizard and Spock";
+}
+
+function spockVaporizesRock() {
+  document.getElementById("result-explanation").innerHTML =
+    "Spock Vaporizes Rock";
+  img.src = "assets/20221021_004547.jpg";
+  img.alt = "two hands gesturing Spock and rock";
+}
+
+function spockSmashesScissors() {
+  document.getElementById("result-explanation").innerHTML =
+    "Spock Smashes Scissors";
+  img.src = "assets/20221021_004536.jpg";
+  img.alt = "two hands gesturing spock and scissors";
+}
+
 // let computerChoice = Math.random();
 // if (computerChoice <= 0.2) {
 //   computerChoice = "rock";
@@ -44,39 +130,21 @@ document.getElementById("rock").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie! Go Again.";
-    document.getElementById("result-explanation").innerHTML = "Draw";
-    img.src = "assets/brett-jordan-6270028.jpg";
-    img.alt = "tiles that spells out 'stop, think, engage'";
+    tieResult();
   } else if (computerChoice === "paper") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Paper Covers Rock";
-    img.src = "assets/20221021_004335.jpg";
-    img.alt = "two hands gesturing paper and rock";
-    loserCount += 1;
+    logLoss();
+    paperCoversRock();
   } else if (computerChoice === "spock") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Spock Vaporizes Rock";
-    img.src = "assets/20221021_004547.jpg";
-    img.alt = "two hands gesturing Spock and rock";
-    loserCount += 1;
+    logLoss();
+    spockVaporizesRock();
   } else if (computerChoice === "scissors") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Rock Crushes Scissors";
-    img.src = "assets/20221021_004313.jpg";
-    img.alt = "two hands gesturing rock and scissors";
+    rockCrushesScissors();
   } else if (computerChoice === "lizard") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Rock Crushes Lizard";
-    img.src = "assets/20221021_004309.jpg";
-    img.alt = "two hands gesturing rock and lizard";
+    rockCrushesLizard();
   }
-  document.getElementById("user-total").textContent = winnerCount;
-  document.getElementById("computer-total").textContent = loserCount;
+  logCounter();
 });
 
 document.getElementById("paper").addEventListener("click", function () {
@@ -98,39 +166,21 @@ document.getElementById("paper").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie! Go Again.";
-    document.getElementById("result-explanation").innerHTML = "Draw";
-    img.src = "assets/brett-jordan-6270028.jpg";
-    img.alt = "tiles that spells out 'stop, think, engage'";
+    tieResult();
   } else if (computerChoice === "scissors") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Scissors Cuts Paper";
-    img.src = "assets/20221021_004410.jpg";
-    img.alt = "two hands gesturing scissors and paper";
-    loserCount += 1;
+    logLoss();
+    scissorsCutsPaper();
   } else if (computerChoice === "lizard") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Lizard Eats Paper";
-    img.src = "assets/20221021_004451.jpg";
-    img.alt = "two hands gesturing lizard and paper";
-    loserCount += 1;
+    logLoss();
+    lizardEatsPaper();
   } else if (computerChoice === "rock") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Paper Covers Rock";
-    img.src = "assets/20221021_004335.jpg";
-    img.alt = "two hands gesturing paper and rock";
+    paperCoversRock();
   } else if (computerChoice === "spock") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Paper Disproves Spock";
-    img.src = "assets/20221021_004350.jpg";
-    img.alt = "two hands gesturing paper and Spock";
+    paperDisprovesSpock();
   }
-  document.getElementById("user-total").textContent = winnerCount;
-  document.getElementById("computer-total").textContent = loserCount;
+  logCounter();
 });
 
 document.getElementById("scissors").addEventListener("click", function () {
@@ -152,39 +202,21 @@ document.getElementById("scissors").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie! Go Again.";
-    document.getElementById("result-explanation").innerHTML = "Draw";
-    img.src = "assets/brett-jordan-6270028.jpg";
-    img.alt = "tiles that spells out 'stop, think, engage'";
+    tieResult();
   } else if (computerChoice === "rock") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Rock Crushes Scissors";
-    img.src = "assets/20221021_004313.jpg";
-    img.alt = "two hands gesturing rock and scissors";
-    loserCount += 1;
+    logLoss();
+    rockCrushesScissors();
   } else if (computerChoice === "spock") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Spock Smashes Scissors";
-    img.src = "assets/20221021_004536.jpg";
-    img.alt = "two hands gesturing spock and scissors";
-    loserCount += 1;
+    logLoss();
+    spockSmashesScissors();
   } else if (computerChoice === "paper") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Scissors Cuts Paper";
-    img.src = "assets/20221021_004410.jpg";
-    img.alt = "two hands gesturing scissors and paper";
+    scissorsCutsPaper();
   } else if (computerChoice === "lizard") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Scissors Decapitates Lizard";
-    img.src = "assets/20221021_004417.jpg";
-    img.alt = "two hands gesturing scissors and lizard";
+    scissorsDecapitatesLizard();
   }
-  document.getElementById("user-total").textContent = winnerCount;
-  document.getElementById("computer-total").textContent = loserCount;
+  logCounter();
 });
 
 document.getElementById("lizard").addEventListener("click", function () {
@@ -206,39 +238,21 @@ document.getElementById("lizard").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie! Go Again.";
-    document.getElementById("result-explanation").innerHTML = "Draw";
-    img.src = "assets/brett-jordan-6270028.jpg";
-    img.alt = "tiles that spells out 'stop, think, engage'";
+    tieResult();
   } else if (computerChoice === "rock") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Rock Crushes Lizard";
-    img.src = "assets/20221021_004309.jpg";
-    img.alt = "two hands gesturing rock and lizard";
-    loserCount += 1;
+    logLoss();
+    rockCrushesLizard();
   } else if (computerChoice === "scissors") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Scissors Decapitates Lizard";
-    img.src = "assets/20221021_004417.jpg";
-    img.alt = "two hands gesturing scissors and lizard";
-    loserCount += 1;
+    logLoss();
+    scissorsDecapitatesLizard();
   } else if (computerChoice === "paper") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Lizard Eats Paper";
-    img.src = "assets/20221021_004451.jpg";
-    img.alt = "two hands gesturing lizard and paper";
+    lizardEatsPaper();
   } else if (computerChoice === "spock") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Lizard Poisons Spock";
-    img.src = "assets/20221021_004441.jpg";
-    img.alt = "two hands gesturing lizard and Spock";
+    lizardPoisonsSpock();
   }
-  document.getElementById("user-total").textContent = winnerCount;
-  document.getElementById("computer-total").textContent = loserCount;
+  logCounter();
 });
 
 document.getElementById("spock").addEventListener("click", function () {
@@ -260,39 +274,21 @@ document.getElementById("spock").addEventListener("click", function () {
   console.log(computerChoice);
 
   if (userInput === computerChoice) {
-    document.getElementById("result").innerHTML = "Tie! Go Again.";
-    document.getElementById("result-explanation").innerHTML = "Draw";
-    img.src = "assets/brett-jordan-6270028.jpg";
-    img.alt = "tiles that spells out 'stop, think, engage'";
+    tieResult();
   } else if (computerChoice === "paper") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Paper Disproves Spock";
-    img.src = "assets/20221021_004350.jpg";
-    img.alt = "two hands gesturing paper and Spock";
-    loserCount += 1;
+    logLoss();
+    paperDisprovesSpock();
   } else if (computerChoice === "lizard") {
-    document.getElementById("result").innerHTML = "Loser!";
-    document.getElementById("result-explanation").innerHTML =
-      "Lizard Poisons Spock";
-    img.src = "assets/20221021_004441.jpg";
-    img.alt = "two hands gesturing lizard and Spock";
-    loserCount += 1;
+    logLoss();
+    lizardPoisonsSpock();
   } else if (computerChoice === "scissors") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Spock Smashes Scissors";
-    img.src = "assets/20221021_004536.jpg";
-    img.alt = "two hands gesturing Spock and scissors";
+    spockSmashesScissors();
   } else if (computerChoice === "rock") {
     logWin();
-    document.getElementById("result-explanation").innerHTML =
-      "Spock Vaporizes Rock";
-    img.src = "assets/20221021_004547.jpg";
-    img.alt = "two hands gesturing Spock and rock";
+    spockVaporizesRock();
   }
-  document.getElementById("user-total").textContent = winnerCount;
-  document.getElementById("computer-total").textContent = loserCount;
+  logCounter();
 });
 
 document
