@@ -109,45 +109,26 @@ function generatedChoice() {
   } else {
     computerChoice = "spock";
   }
-  console.log(computerChoice);
   return computerChoice;
 }
-//code breaks when refactoring the logic above into a function, probably need to work on variable names
 
 document.getElementById("rock").addEventListener("click", function () {
   clickSound.play();
   let userInput = "rock";
-  let computerChoice = "";
-  generatedChoice();
-  // let computerChoice = Math.random();
+  let comChoice = generatedChoice();
 
-  // if (computerChoice <= 0.2) {
-  //   computerChoice = "rock";
-  // } else if (0.21 <= computerChoice <= 0.4) {
-  //   computerChoice = "paper";
-  // } else if (0.41 <= computerChoice <= 0.6) {
-  //   computerChoice = "scissors";
-  // } else if (0.61 <= computerChoice <= 0.8) {
-  //   computerChoice = "lizard";
-  // } else {
-  //   computerChoice = "spock";
-  // }
-  // console.log(computerChoice);
-  console.log(computerChoice);
-  console.log(userInput === computerChoice);
-  if (userInput === computerChoice) {
-    console.log(computerChoice);
+  if (userInput === comChoice) {
     tieResult();
-  } else if (computerChoice === "paper") {
+  } else if (comChoice === "paper") {
     logLoss();
     paperCoversRock();
-  } else if (computerChoice === "spock") {
+  } else if (comChoice === "spock") {
     logLoss();
     spockVaporizesRock();
-  } else if (computerChoice === "scissors") {
+  } else if (comChoice === "scissors") {
     logWin();
     rockCrushesScissors();
-  } else if (computerChoice === "lizard") {
+  } else if (comChoice === "lizard") {
     logWin();
     rockCrushesLizard();
   }
@@ -157,33 +138,20 @@ document.getElementById("rock").addEventListener("click", function () {
 document.getElementById("paper").addEventListener("click", function () {
   clickSound.play();
   let userInput = "paper";
-  let computerChoice = Math.random();
+  let comChoice = generatedChoice();
 
-  if (computerChoice <= 0.2) {
-    computerChoice = "rock";
-  } else if (0.21 <= computerChoice <= 0.4) {
-    computerChoice = "paper";
-  } else if (0.41 <= computerChoice <= 0.6) {
-    computerChoice = "scissors";
-  } else if (0.61 <= computerChoice <= 0.8) {
-    computerChoice = "lizard";
-  } else {
-    computerChoice = "spock";
-  }
-  console.log(computerChoice);
-
-  if (userInput === computerChoice) {
+  if (userInput === comChoice) {
     tieResult();
-  } else if (computerChoice === "scissors") {
+  } else if (comChoice === "scissors") {
     logLoss();
     scissorsCutsPaper();
-  } else if (computerChoice === "lizard") {
+  } else if (comChoice === "lizard") {
     logLoss();
     lizardEatsPaper();
-  } else if (computerChoice === "rock") {
+  } else if (comChoice === "rock") {
     logWin();
     paperCoversRock();
-  } else if (computerChoice === "spock") {
+  } else if (comChoice === "spock") {
     logWin();
     paperDisprovesSpock();
   }
@@ -193,33 +161,20 @@ document.getElementById("paper").addEventListener("click", function () {
 document.getElementById("scissors").addEventListener("click", function () {
   clickSound.play();
   let userInput = "scissors";
-  let computerChoice = Math.random();
+  let comChoice = generatedChoice();
 
-  if (computerChoice <= 0.2) {
-    computerChoice = "rock";
-  } else if (0.21 <= computerChoice <= 0.4) {
-    computerChoice = "paper";
-  } else if (0.41 <= computerChoice <= 0.6) {
-    computerChoice = "scissors";
-  } else if (0.61 <= computerChoice <= 0.8) {
-    computerChoice = "lizard";
-  } else {
-    computerChoice = "spock";
-  }
-  console.log(computerChoice);
-
-  if (userInput === computerChoice) {
+  if (userInput === comChoice) {
     tieResult();
-  } else if (computerChoice === "rock") {
+  } else if (comChoice === "rock") {
     logLoss();
     rockCrushesScissors();
-  } else if (computerChoice === "spock") {
+  } else if (comChoice === "spock") {
     logLoss();
     spockSmashesScissors();
-  } else if (computerChoice === "paper") {
+  } else if (comChoice === "paper") {
     logWin();
     scissorsCutsPaper();
-  } else if (computerChoice === "lizard") {
+  } else if (comChoice === "lizard") {
     logWin();
     scissorsDecapitatesLizard();
   }
@@ -229,33 +184,20 @@ document.getElementById("scissors").addEventListener("click", function () {
 document.getElementById("lizard").addEventListener("click", function () {
   clickSound.play();
   let userInput = "lizard";
-  let computerChoice = Math.random();
+  let comChoice = generatedChoice();
 
-  if (computerChoice <= 0.2) {
-    computerChoice = "rock";
-  } else if (0.21 <= computerChoice <= 0.4) {
-    computerChoice = "paper";
-  } else if (0.41 <= computerChoice <= 0.6) {
-    computerChoice = "scissors";
-  } else if (0.61 <= computerChoice <= 0.8) {
-    computerChoice = "lizard";
-  } else {
-    computerChoice = "spock";
-  }
-  console.log(computerChoice);
-
-  if (userInput === computerChoice) {
+  if (userInput === comChoice) {
     tieResult();
-  } else if (computerChoice === "rock") {
+  } else if (comChoice === "rock") {
     logLoss();
     rockCrushesLizard();
-  } else if (computerChoice === "scissors") {
+  } else if (comChoice === "scissors") {
     logLoss();
     scissorsDecapitatesLizard();
-  } else if (computerChoice === "paper") {
+  } else if (comChoice === "paper") {
     logWin();
     lizardEatsPaper();
-  } else if (computerChoice === "spock") {
+  } else if (comChoice === "spock") {
     logWin();
     lizardPoisonsSpock();
   }
@@ -265,33 +207,20 @@ document.getElementById("lizard").addEventListener("click", function () {
 document.getElementById("spock").addEventListener("click", function () {
   clickSound.play();
   let userInput = "spock";
-  let computerChoice = Math.random();
+  let comChoice = generatedChoice();
 
-  if (computerChoice <= 0.2) {
-    computerChoice = "rock";
-  } else if (0.21 <= computerChoice <= 0.4) {
-    computerChoice = "paper";
-  } else if (0.41 <= computerChoice <= 0.6) {
-    computerChoice = "scissors";
-  } else if (0.61 <= computerChoice <= 0.8) {
-    computerChoice = "lizard";
-  } else {
-    computerChoice = "spock";
-  }
-  console.log(computerChoice);
-
-  if (userInput === computerChoice) {
+  if (userInput === comChoice) {
     tieResult();
-  } else if (computerChoice === "paper") {
+  } else if (comChoice === "paper") {
     logLoss();
     paperDisprovesSpock();
-  } else if (computerChoice === "lizard") {
+  } else if (comChoice === "lizard") {
     logLoss();
     lizardPoisonsSpock();
-  } else if (computerChoice === "scissors") {
+  } else if (comChoice === "scissors") {
     logWin();
     spockSmashesScissors();
-  } else if (computerChoice === "rock") {
+  } else if (comChoice === "rock") {
     logWin();
     spockVaporizesRock();
   }
