@@ -28,7 +28,11 @@
         <button id="scissors" class="scissors" type="button">Scissors</button>
         <button id="lizard" class="lizard" type="button">Lizard</button>
         <button id="spock" class="spock" type="button">Spock</button>
-        <audio id="click-sound" src="./assets/16960_1461335343.mp3"></audio>
+        <audio
+          id="click-sound"
+          src="./assets/16960_1461335343.mp3"
+          type="audio/mpeg"
+        ></audio>
       </div>
       <div>
         <p id="result"></p>
@@ -61,7 +65,16 @@
         <button id="clear-scoreboard">Restart Game</button>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <audio
+        id="background-music"
+        controls
+        autoplay
+        loop
+        src="./assets/17710_1462204241.mp3"
+        type="audio/mpeg"
+      ></audio>
+    </footer>
   </body>
   <script src="game.js"></script>
 </html>

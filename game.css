@@ -119,3 +119,8 @@ img {
 /******* 
 footer 
 *******/
+
+#background-music {
+  margin: 9em 13.2em 1em 0.5em;
+  opacity: 0.65;
+}

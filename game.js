@@ -6,12 +6,12 @@ let clickSound = document.querySelector("#click-sound");
 const img = document.querySelector("img");
 
 function logWin() {
-  document.getElementById("result").innerHTML = "Winner!";
+  document.getElementById("result").innerHTML = "You Won!";
   winnerCount += 1;
 }
 
 function logLoss() {
-  document.getElementById("result").innerHTML = "Loser!";
+  document.getElementById("result").innerHTML = "Defeated!";
   loserCount += 1;
 }
 
