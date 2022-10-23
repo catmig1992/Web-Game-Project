@@ -95,25 +95,7 @@ function spockSmashesScissors() {
   img.alt = "two hands gesturing spock and scissors";
 }
 
-// let computerChoice = Math.random();
-// if (computerChoice <= 0.2) {
-//   computerChoice = "rock";
-// } else if (0.21 <= computerChoice <= 0.4) {
-//   computerChoice = "paper";
-// } else if (0.41 <= computerChoice <= 0.6) {
-//   computerChoice = "scissors";
-// } else if (0.61 <= computerChoice <= 0.8) {
-//   computerChoice = "lizard";
-// } else {
-//   computerChoice = "spock";
-// }
-// console.log(computerChoice);
-
-//code breaks when refactoring the logic above into a function, probably need to work on variable names
-
-document.getElementById("rock").addEventListener("click", function () {
-  clickSound.play();
-  let userInput = "rock";
+function generatedChoice() {
   let computerChoice = Math.random();
 
   if (computerChoice <= 0.2) {
@@ -128,8 +110,33 @@ document.getElementById("rock").addEventListener("click", function () {
     computerChoice = "spock";
   }
   console.log(computerChoice);
+  return computerChoice;
+}
+//code breaks when refactoring the logic above into a function, probably need to work on variable names
 
+document.getElementById("rock").addEventListener("click", function () {
+  clickSound.play();
+  let userInput = "rock";
+  let computerChoice = "";
+  generatedChoice();
+  // let computerChoice = Math.random();
+
+  // if (computerChoice <= 0.2) {
+  //   computerChoice = "rock";
+  // } else if (0.21 <= computerChoice <= 0.4) {
+  //   computerChoice = "paper";
+  // } else if (0.41 <= computerChoice <= 0.6) {
+  //   computerChoice = "scissors";
+  // } else if (0.61 <= computerChoice <= 0.8) {
+  //   computerChoice = "lizard";
+  // } else {
+  //   computerChoice = "spock";
+  // }
+  // console.log(computerChoice);
+  console.log(computerChoice);
+  console.log(userInput === computerChoice);
   if (userInput === computerChoice) {
+    console.log(computerChoice);
     tieResult();
   } else if (computerChoice === "paper") {
     logLoss();
