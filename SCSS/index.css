@@ -1,0 +1,69 @@
+/* * {
+  outline: 1px solid red;
+} */
+body {
+  background: linear-gradient(0.25turn, #31087d, #62506d, #fa31b5);
+  margin: 15px 0;
+  padding: 0;
+  width: 100vw;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/******* 
+header 
+*******/
+.home-title h1 {
+  color: #ffc23e;
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+}
+.home-title nav ul {
+  list-style: none;
+}
+.home-title nav ul li {
+  font-size: 1.8em;
+}
+.home-title nav ul li a {
+  color: #fa31b5;
+  text-decoration: none;
+}
+.home-title nav ul li a:hover {
+  color: #ffc23e;
+}
+
+/******* 
+main 
+*******/
+main h2 {
+  text-align: center;
+  font-size: 2.8em;
+  margin: 5px 0;
+}
+main h2 a {
+  color: #fa31b5;
+  text-decoration: none;
+}
+main h2 a:hover {
+  color: #ffc23e;
+}
+main img {
+  padding: 1em;
+  margin: 1em;
+  width: 100%;
+  max-width: 750px;
+  max-height: 550px;
+}
+
+/******* 
+footer 
+*******/
+.credit {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=index.css.map */

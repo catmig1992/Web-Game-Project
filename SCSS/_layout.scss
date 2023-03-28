@@ -1,0 +1,28 @@
+@import "color";
+
+@mixin background-theme {
+  background: linear-gradient(
+    0.25turn,
+    $deep-purple,
+    $theme-gradient-transition,
+    $deep-pink
+  );
+  margin: 15px 0;
+  padding: 0;
+  width: 100vw;
+  height: 96vh;
+}
+
+@mixin flex($direction: column, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+@mixin image-size() {
+  padding: 1em;
+  margin: 1em;
+  width: 100%;
+  max-width: 750px;
+  max-height: 550px;
+}
