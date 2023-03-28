@@ -1,0 +1,8 @@
+@import "color";
+
+@mixin main-title {
+  color: $theme-tertiary;
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+}

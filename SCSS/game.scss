@@ -1,0 +1,109 @@
+@import "button-selection";
+@import "color";
+@import "header";
+@import "layout";
+
+body {
+  @include background-theme;
+  @include flex;
+}
+
+/******* 
+header 
+*******/
+.game-title {
+  h1 {
+    @include main-title;
+  }
+  nav {
+    ul {
+      list-style: none;
+      li {
+        font-size: 1.8em;
+        a {
+          color: $theme-primary;
+          text-decoration: none;
+          &:hover {
+            color: $theme-tertiary;
+          }
+        }
+      }
+    }
+  }
+}
+
+/******* 
+main 
+*******/
+.selection {
+  .game-choices {
+    color: $theme-text-detail;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 15px 0;
+  }
+}
+
+.user-choices {
+  @include flex-game-choices;
+  button {
+    @include selection-styling;
+  }
+}
+
+div {
+  #result {
+    @include result-styling;
+  }
+  #result-explanation {
+    @include result-styling;
+  }
+  div {
+    img {
+      @include game-image;
+    }
+  }
+}
+
+.scoreboard {
+  h2 {
+    color: $theme-tertiary;
+    text-align: center;
+    font-size: 2em;
+  }
+  table {
+    @include table-styling;
+    .score-title {
+      @include score-styling;
+      tr {
+        th {
+          @include table-styling;
+          padding: 10px 40px;
+        }
+      }
+    }
+    .scores {
+      @include score-styling;
+      td {
+        @include table-styling;
+      }
+    }
+  }
+}
+
+.restart-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1em 3em 0;
+  #clear-scoreboard {
+    @include selection-styling;
+  }
+}
+
+/******* 
+footer 
+*******/
+#background-music {
+  margin: 1.5em 15em 5em 0.5em;
+  opacity: 0.65;
+}

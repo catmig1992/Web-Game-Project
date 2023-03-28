@@ -1,7 +1,5 @@
-/* * {
-  outline: 1px solid red;
-} */
 @import "color";
+@import "header";
 @import "layout";
 
 body {
@@ -14,10 +12,7 @@ header
 *******/
 .home-title {
   h1 {
-    color: $theme-tertiary;
-    text-align: center;
-    font-size: 4em;
-    margin: 0;
+    @include main-title;
   }
   nav {
     ul {

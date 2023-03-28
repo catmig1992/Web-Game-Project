@@ -1,0 +1,130 @@
+body {
+  background: linear-gradient(0.25turn, #31087d, #62506d, #fa31b5);
+  margin: 15px 0;
+  padding: 0;
+  width: 100vw;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/******* 
+header 
+*******/
+.game-title h1 {
+  color: #ffc23e;
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+}
+.game-title nav ul {
+  list-style: none;
+}
+.game-title nav ul li {
+  font-size: 1.8em;
+}
+.game-title nav ul li a {
+  color: #fa31b5;
+  text-decoration: none;
+}
+.game-title nav ul li a:hover {
+  color: #ffc23e;
+}
+
+/******* 
+main 
+*******/
+.selection .game-choices {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.7em;
+  margin: 15px 0;
+}
+
+.user-choices {
+  display: flex;
+  justify-content: center;
+}
+.user-choices button {
+  background-color: #ffc23e;
+  color: #31087d;
+  font-size: 1.5em;
+  padding: 0.25em;
+  margin: 0.25em;
+  border-radius: 10px;
+  border-color: #ffc23e;
+  box-shadow: 8px 5px 10px #161616;
+}
+
+div #result {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  margin: 10px;
+}
+div #result-explanation {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  margin: 10px;
+}
+div div img {
+  margin-left: 5.22em;
+  width: 355px;
+  height: 235px;
+  border-radius: 10px;
+}
+
+.scoreboard h2 {
+  color: #ffc23e;
+  text-align: center;
+  font-size: 2em;
+}
+.scoreboard table {
+  border: 1px solid #ffffff;
+  margin: 0 auto;
+}
+.scoreboard table .score-title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+}
+.scoreboard table .score-title tr th {
+  border: 1px solid #ffffff;
+  margin: 0 auto;
+  padding: 10px 40px;
+}
+.scoreboard table .scores {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+}
+.scoreboard table .scores td {
+  border: 1px solid #ffffff;
+  margin: 0 auto;
+}
+
+.restart-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1em 3em 0;
+}
+.restart-button #clear-scoreboard {
+  background-color: #ffc23e;
+  color: #31087d;
+  font-size: 1.5em;
+  padding: 0.25em;
+  margin: 0.25em;
+  border-radius: 10px;
+  border-color: #ffc23e;
+  box-shadow: 8px 5px 10px #161616;
+}
+
+/******* 
+footer 
+*******/
+#background-music {
+  margin: 1.5em 15em 5em 0.5em;
+  opacity: 0.65;
+}/*# sourceMappingURL=game.css.map */

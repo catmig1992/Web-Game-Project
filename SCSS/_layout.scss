@@ -26,3 +26,33 @@
   max-width: 750px;
   max-height: 550px;
 }
+
+@mixin game-image() {
+  margin-left: 5.22em;
+  width: 355px;
+  height: 235px;
+  border-radius: 10px;
+}
+
+@mixin flex-game-choices($align: center) {
+  display: flex;
+  justify-content: $align;
+}
+
+@mixin result-styling {
+  color: $theme-text-detail;
+  text-align: center;
+  font-size: 2em;
+  margin: 10px;
+}
+
+@mixin score-styling {
+  color: $theme-text-detail;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+@mixin table-styling {
+  border: 1px solid $theme-text-detail;
+  margin: 0 auto;
+}
