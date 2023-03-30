@@ -1,0 +1,24 @@
+{
+  "name": "web-game-project",
+  "version": "1.0.0",
+  "description": "Rock, Paper, Scissors, Lizard, Spock",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catmig1992/Web-Game-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catmig1992/Web-Game-Project/issues"
+  },
+  "homepage": "https://github.com/catmig1992/Web-Game-Project#readme",
+  "dependencies": {
+    "typescript": "^5.0.2"
+  }
+}
