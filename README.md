@@ -1,6 +1,7 @@
 Game of Chance
+#
 
-#Web-Game-Project
+
 
 Rock, Paper, Scissors, Lizard, Spock
 
@@ -10,8 +11,13 @@ This will be a simple one player game against the computer generating random cho
 The player will have five options to choose from to win against the opponent (computer) by clicking one of the five buttons provided.
 
 Game Options: | Game Option Defeats:
+#
 Rock.......... | Scissors, Lizard
+#
 Paper......... | Rock, Spock
+#
 Scissors...... | Paper, Lizard
+#
 Lizard........ | Paper, Spock
+#
 Spock......... | Rock, Scissors
