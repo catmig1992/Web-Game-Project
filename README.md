@@ -28,3 +28,6 @@ Spock......... | Rock, Scissors
 #
 
 This project is incomplete, the back-end server and database still needs to be set up to save the game data. The styling is also a work in progress.
+#
+
+[0.0.1]: https://github.com/catmig1992/Web-Game-Project/releases/tag/v0.0.1
