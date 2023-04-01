@@ -13,4 +13,6 @@ $theme-text-detail: $white;
 
 .element {
   @debug $theme-primary;
+  @debug $theme-secondary;
+  @debug $theme-tertiary;
 }
