@@ -1,4 +1,11 @@
-# Web-Game-Project
+Game of Chance
+#
+
+Feel free to test out my mini game via github-pages
+#
+
+When cloning this repository, please run the command: npm install
+#
 
 Rock, Paper, Scissors, Lizard, Spock
 
@@ -8,8 +15,19 @@ This will be a simple one player game against the computer generating random cho
 The player will have five options to choose from to win against the opponent (computer) by clicking one of the five buttons provided.
 
 Game Options: | Game Option Defeats:
+#
 Rock.......... | Scissors, Lizard
+#
 Paper......... | Rock, Spock
+#
 Scissors...... | Paper, Lizard
+#
 Lizard........ | Paper, Spock
+#
 Spock......... | Rock, Scissors
+#
+
+This project is incomplete, the back-end server and database still needs to be set up to save the game data. The styling is also a work in progress.
+#
+
+[0.0.1]: https://github.com/catmig1992/Web-Game-Project/releases/tag/v0.0.1
