@@ -4,6 +4,8 @@ Game of Chance
 Feel free to test out my mini game via github-pages
 #
 
+When cloning this repository, please run the command: npm install
+#
 
 Rock, Paper, Scissors, Lizard, Spock
 
@@ -23,3 +25,6 @@ Scissors...... | Paper, Lizard
 Lizard........ | Paper, Spock
 #
 Spock......... | Rock, Scissors
+#
+
+This project is incomplete, the back-end server and database still needs to be set up to save the game data.
