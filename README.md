@@ -1,6 +1,8 @@
 Game of Chance
 #
 
+Feel free to test out my mini game via github-pages
+#
 
 
 Rock, Paper, Scissors, Lizard, Spock
