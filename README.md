@@ -1,3 +1,5 @@
+Game of Chance
+
 # Web-Game-Project
 
 Rock, Paper, Scissors, Lizard, Spock
