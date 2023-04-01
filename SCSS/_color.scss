@@ -10,3 +10,7 @@ $theme-secondary: $deep-purple;
 $theme-tertiary: $deep-yellow;
 $theme-gradient-transition: $gray-purple;
 $theme-text-detail: $white;
+
+.element {
+  @debug $theme-primary;
+}
