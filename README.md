@@ -27,4 +27,4 @@ Lizard........ | Paper, Spock
 Spock......... | Rock, Scissors
 #
 
-This project is incomplete, the back-end server and database still needs to be set up to save the game data.
+This project is incomplete, the back-end server and database still needs to be set up to save the game data. The styling is also a work in progress.
